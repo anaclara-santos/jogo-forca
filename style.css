@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgb(2, 30, 73);
+    padding: 20px; 
+  flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.analegal{
+    font-size: 40px;
+    font-weight: bold;
+}
+body{
+    background-color: rgb(21, 51, 75);
+    color: aliceblue;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    font-size: 30px;
+}
+main{
+    margin-top: 40px;
+}
+footer{
+    background-color: rgb(2, 30, 73);
+    margin-top: 300px;
+    font-size: 20px;
+}
+
+#palavra {
+  font-size: 40px;
+  letter-spacing: 20px;
+  margin-bottom: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#mensagem {
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+button {
+  margin: 6px;
+  padding: 10px 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #0b2748;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fcc;
+}
+
+#letras button {
+  width: 35px;
+}
