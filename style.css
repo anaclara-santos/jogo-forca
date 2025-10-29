@@ -36,6 +36,7 @@ footer{
   font-size: 40px;
   letter-spacing: 20px;
   margin-bottom: 50px;
+
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -52,13 +53,22 @@ button {
   border-radius: 6px;
   background-color: #0b2748;
   color: white;
-  cursor: pointer;
+  cursor:pointer ;
 }
 
 button:hover {
-  background-color: #005fcc;
+  background-color: #0f2a49;
 }
 
 #letras button {
-  width: 35px;
+  width: 45px;
+}
+.container{
+    max-width: 600px;
+    
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
