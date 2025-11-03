@@ -4,6 +4,16 @@
     box-sizing: 0px;
     font-family: 'Times New Roman', Times, serif;
 }
+
+/* 🎮 Fonte moderna e fundo gradiente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
 header{
     background-color: rgb(2, 30, 73);
     padding: 20px; 
@@ -72,3 +82,83 @@ section{
     justify-content: center;
     align-items: center;
 }
+/* ⌨ Área do teclado */
+#letras {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(8, auto); /* 7 colunas */
+  gap: 5px;
+  justify-content: center;
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+/* 🔘 Botões das letras */
+#letras button {
+  background: #4361ee;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 16px;
+  margin: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#letras button:hover {
+  background: #4895ef;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #4895ef;
+}
+
+/* 💀 Quando o botão estiver desativado (letra já usada) */
+#letras button:disabled {
+  background: #3a3a3a;
+  color: #aaa;
+  transform: none;
+  box-shadow: none;
+}
+
+/* 📱 Responsivo para celular */
+@media (max-width: 300px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #palavra {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  #letras button {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  #letras {
+    padding: 15px;
+  }
+}
+
+body {
+  animation: mudarCor 8s infinite alternate;
+}
+
+/* Define as cores que o fundo vai ter */
+@keyframes mudarCor {
+  50% {
+    background-color: #1b045a;
+  }
+  50% {
+    background-color: #071a5a;
+  }
+  
+}
+
+
